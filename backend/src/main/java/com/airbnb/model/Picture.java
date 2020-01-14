@@ -18,5 +18,27 @@ public class Picture {
 	@ManyToOne(fetch = FetchType.EAGER)
 	private Apartment apartment;
 
+	public Picture() {
+		super();
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Apartment getApartment() {
+		return apartment;
+	}
+
+	public void setApartment(Apartment apartment) {
+		this.apartment = apartment;
+	}
+
+	
+	
 
 }

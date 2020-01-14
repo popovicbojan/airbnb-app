@@ -1,10 +1,10 @@
-CREATE USER IF NOT EXISTS admin IDENTIFIED BY 'pass';
+CREATE USER IF NOT EXISTS airbnbAdmin IDENTIFIED BY 'pass';
 
 DROP DATABASE IF EXISTS airbnb;
 CREATE DATABASE airbnb DEFAULT CHARACTER SET utf8;
 
 USE airbnb;
 
-GRANT ALL ON airbnb.* TO 'admin'@'%';
+GRANT ALL ON airbnb.* TO 'airbnbAdmin'@'%';
 
 FLUSH PRIVILEGES;

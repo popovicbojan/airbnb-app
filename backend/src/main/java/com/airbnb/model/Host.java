@@ -16,4 +16,18 @@ public class Host extends User{
 	@OneToMany(mappedBy = "host", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	List<Apartment> forRent = new ArrayList<Apartment>();
 
+	public Host() {
+		super();
+	}
+
+	public List<Apartment> getForRent() {
+		return forRent;
+	}
+
+	public void setForRent(List<Apartment> forRent) {
+		this.forRent = forRent;
+	}
+	
+	
+
 }

@@ -36,4 +36,66 @@ public class Reservation {
 	@ManyToOne(fetch = FetchType.EAGER)
 	private ReservationStatus status;
 
+	public Reservation() {
+		super();
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Apartment getApartment() {
+		return apartment;
+	}
+
+	public void setApartment(Apartment apartment) {
+		this.apartment = apartment;
+	}
+
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(LocalDate startDate) {
+		this.startDate = startDate;
+	}
+
+	public int getNumberOfDays() {
+		return numberOfDays;
+	}
+
+	public void setNumberOfDays(int numberOfDays) {
+		this.numberOfDays = numberOfDays;
+	}
+
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
+	public Guest getGuest() {
+		return guest;
+	}
+
+	public void setGuest(Guest guest) {
+		this.guest = guest;
+	}
+
+	public ReservationStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(ReservationStatus status) {
+		this.status = status;
+	}
+	
+	
+
 }
