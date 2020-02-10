@@ -15,9 +15,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
-
 
 @Entity
 @Table(name = "tbl_apartment")
@@ -31,7 +28,7 @@ public class Apartment {
 	private ApartmentType type;
 	
 	@Column
-	private int numerOfRooms;
+	private int numberOfRooms;
 	
 	@Column
 	private int numberOfGuest;
@@ -86,12 +83,12 @@ public class Apartment {
 		this.type = type;
 	}
 
-	public int getNumerOfRooms() {
-		return numerOfRooms;
+	public int getNumberOfRooms() {
+		return numberOfRooms;
 	}
 
-	public void setNumerOfRooms(int numerOfRooms) {
-		this.numerOfRooms = numerOfRooms;
+	public void setNumberOfRooms(int numerOfRooms) {
+		this.numberOfRooms = numerOfRooms;
 	}
 
 	public int getNumberOfGuest() {

@@ -7,7 +7,7 @@ import com.airbnb.model.Apartment;
 public interface ApartmentService {
 	
 	Apartment findOne(Long id);
-	List<ApartmentService> findAll();
+	List<Apartment> findAll();
 	Apartment save(Apartment apartment);
 	Apartment delete(Long id);
 

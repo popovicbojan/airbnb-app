@@ -7,5 +7,7 @@ import com.airbnb.model.Host;
 
 @Repository
 public interface HostRepository extends JpaRepository<Host, Long>{
+	
+	Host findHostByUsername(String username);
 
 }

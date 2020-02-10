@@ -8,7 +8,7 @@ public interface ApartmentTypeService {
 	
 	ApartmentType findOne(Long id);
 	List<ApartmentType> findAll();
-	ApartmentType save(ApartmentType ApartmentType);
+	ApartmentType save(ApartmentType apartmentType);
 	ApartmentType delete(Long id);
 
 }
